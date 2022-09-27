@@ -1,13 +1,26 @@
 {
-    "presets": [
+    // "presets": [
+    //     [
+    //         "@babel/preset-env",
+    //         {
+    //             "targets": {
+    //                 "ie": "9"
+    //             },
+    //             "useBuiltIns": "usage",
+    //             "corejs": "3.6.5"
+    //         }
+    //     ]
+    // ],
+    "plugins": [
+        // 自动引入 helper 函数;将 helper 函数都抽离到一个包中，所有用到的文件都可以引用可减少代码量
+        "@babel/plugin-transform-runtime",
         [
-            "@babel/preset-env",
+            "transform-remove-console",
             {
-                "targets": {
-                    "edge": "17"
-                },
-                "useBuiltIns": "usage",
-                "corejs": "3.6.5"
+                "exclude": [
+                    "error",
+                    "warn"
+                ]
             }
         ]
     ]

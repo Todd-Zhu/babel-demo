@@ -4,8 +4,8 @@
         "@babel/preset-env",
         {
           "targets": {
-            // "ie": "9"
-            "edge": "20"
+            "ie": "9"
+            // "edge": "20"
           },
           "useBuiltIns": "usage",
           "corejs": "3.6.5"

@@ -1,15 +1,8 @@
-"use strict";
-
-require("core-js/modules/es.array.includes.js");
-
 const arrowFun = a => {
-  console.log(a);
-}; // 插入变量绑定的值
+  console.warn(a);
+};
 
+class Person {}
 
-var name = "Bob",
-    time = "today";
-"Hello ".concat(name, ", how are you ").concat(time, "?");
-Number.isInteger(Infinity);
-[1, 2, 3].includes(1);
-Array.of(1, 2, 3);
+let num1 = Number("1");
+Promise.prototype.finally();
